@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zappeln Generator</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Der Zappelngenerator 0.9</h1>
+    
+    <!-- Grid-Container für Spiele-Cards -->
+    <div class="container">
+      <div id="lastCard" class="game0 card this-card hidden"></div>
+    </div>
+
+    <!-- Warnhinweise -->
+    <p id="allDone" class="hinweis hidden">Alle Spiele wurden gespielt.</p>
+    <p id="monopoly-hinweis" class="hinweis hidden">Versuchs gar nicht erst. Das Spiel haben wir schon in der Liste und wir werden es sowieso nicht spielen!</p>
+    <p id="monopoly-hinweis2" class="hinweis hidden">Löschen bringt auch nichts. Wir spielen kein Monopoly!</p>
+    <p id="doppeltesSpiel" class="hinweis hidden">Das Spiel haben wir schon in der Liste.</p>
+    <p id="bitteEintragen" class="hinweis hidden">Bitte ein Spiel eintragen.</p>
+    <p id="nichtLoeschbar" class="hinweis hidden">Dieses Spiel wurde schon gespielt und kann nicht gelöscht werden.</p>
+    
+
+    <!-- Buttons -->
+    <button id="naechstes">Welches Spiel als nächstes?</button>
+    <button id="loeschen">Letztes Spiel löschen</button>
+
+    <!-- Neues Spiel hinzufügen -->
+    <p>
+      Neues Spiel hier eingeben:
+      <input class="input-text" type="text" id="newGame" />
+
+      <input class="input-button" type="button" id="abschicken" onclick="hire()" value="Abschicken"/>
+    </p>
+
+    <button id="standardliste">Mit Standardliste starten</button><br />
+
+
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
